@@ -130,30 +130,25 @@ input,select,textarea,button{font-family:inherit;font-size:inherit}
 }
 
 /* =========================================================
-   TOPBAR — deep forest green with gold text
+   TOPBAR — pink→purple gradient announcement bar
+   (matches reference: asshefadawkhana.blogspot.com)
    ========================================================= */
 .topbar{
-  background:
-    linear-gradient(180deg, var(--green-darkest) 0%, var(--green-deep) 100%),
-    var(--green-darkest);
-  color:var(--gold-light);
+  background:linear-gradient(to right, #c20fae 0%, #f011d9 50%, #9333ea 100%);
+  color:#ffffff;
   text-align:center;
-  font-weight:600;
-  font-size:15px;
-  padding:12px 14px;
-  letter-spacing:.3px;
-  border-bottom:1px solid rgba(212,175,55,.28);
+  font-weight:400;
+  font-size:14px;
+  line-height:20px;
+  padding:8px 16px;
+  letter-spacing:normal;
+  border-bottom:0;
   position:relative;
-  font-family:'Noto Sans Bengali','Hind Siliguri',sans-serif;
+  font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;
 }
-.topbar::after{
-  content:"";
-  position:absolute;left:0;right:0;bottom:-1px;height:1px;
-  background:linear-gradient(90deg, transparent, var(--gold-mid), transparent);
-  opacity:.55;
-}
-.topbar span{color:var(--gold-mid)}
-.topbar strong{font-weight:700;color:#fff;letter-spacing:.4px}
+.topbar::after{content:none}
+.topbar span{color:#ffffff}
+.topbar strong{font-weight:700;color:#ffffff;letter-spacing:normal}
 
 /* =========================================================
    BRAND STRIP — ivory with gold underline
